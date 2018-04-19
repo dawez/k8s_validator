@@ -13,5 +13,5 @@ spec:
       paths:
       - path: /visualization/
         backend:
-          serviceName: my-own-servicename
+          serviceName: my-own-servicename1
           servicePort: 80
