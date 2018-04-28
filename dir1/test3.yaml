@@ -1,0 +1,19 @@
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: this is sample number 3
+  namespace: custom
+  annotations:
+    kubernetes.io/ingress.class: "internal"
+spec:
+  rules:
+  - host: "sample-host"
+    http:
+      paths:
+      - path: /visualization/
+        backend:
+          serviceName: my-own-servicename3
+          servicePort: 80
+
+# this is in the folder dir 1
